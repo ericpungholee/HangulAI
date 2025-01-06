@@ -24,20 +24,4 @@ This project leverages **SentenceTransformers**, **Huggingface Transformers**, a
 - **Faiss**: For efficient vector search and retrieval.
 - **Korean Dataset**: Domain-specific data for training and testing.
 
----
 
-## 📂 Project Structure
-
-```plaintext
-HangulAI/
-├── app.py                 # Flask API for the RAG pipeline
-├── build_index.py         # Script to build the retriever index
-├── train_retriever.py     # Script to fine-tune the retriever model
-├── generator.py           # Script for generator setup
-├── test_request.py        # Script to test the Flask API
-├── data.json              # Sample dataset (questions and answers)
-├── answers.json           # Processed answers for retrieval
-├── retriever_model/       # Fine-tuned retriever model (excluded from Git)
-├── retriever_index.faiss  # Faiss index for retrieval (excluded from Git)
-├── checkpoints/           # Training checkpoints (optional, excluded from Git)
-├── .gitignore             # Git ignore rules
